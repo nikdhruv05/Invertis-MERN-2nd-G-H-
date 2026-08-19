@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Form</title>
+  </head>
+  <body>
+    <h2>Apply for this Job:</h2>
+    <form action="/login" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required placeholder="Enter your Name" />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Enter your mail"
+      />
+      <br /><br />
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br /><br />
+      <label for="url">Portfolio URL:</label>
+      <input
+        type="url"
+        id="url"
+        name="portfolio"
+        placeholder="https://example.com"
+        required
+      />
+      <br /><br />
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        required
+        placeholder="9854789834"
+        maxlength="10"
+      />
+      <br /><br />
+      <label>Exprience:</label>
+      <label>
+        <input type="radio" name="experience" value="fresher" />Fresher
+      </label>
+      <label>
+        <input type="radio" name="experience" value="1-2" />1-2 Years
+      </label>
+      <label>
+        <input type="radio" name="experience" value="3-5" />3-5 Years
+      </label>
+      <br /><br />
+      <label>Skills:</label>
+      <label for="skills">
+        <input type="checkbox" id="skills" name="skills" value="html" />HTML
+      </label>
+      <label for="css">
+        <input type="checkbox" id="css" name="skills" value="CSS" />CSS
+      </label>
+      <label for="javascript">
+        <input type="checkbox" name="javascript" id="javascript" />JavaScript
+      </label>
+      <label for="react">
+        <input type="checkbox" name="react" id="react" />React
+      </label>
+
+      <br /><br />
+      <label for="role">Role:</label>
+      <select name="role" id="role" required>
+        <option value="">Select a role</option>
+        <option value="frontend">Frontend Dev</option>
+        <option value="backend">Backend Dev</option>
+        <option value="fullstack">Full-Stack Dev</option>
+      </select>
+      <br /><br />
+
+      <!-- Multiple select -->
+      <label for="languages"> Programming Languages </label>
+
+      <select id="languages" name="languages" multiple>
+        <option value="cpp">C++</option>
+        <option value="java">Java</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="devops" disabled> DevOps - Unavailable</option>
+      </select>
+      <br /><br />
+
+      <!-- textArea -->
+      <label for="message">Cover Letter:</label>
+      <textarea
+        name="message"
+        id="message"
+        rows="6"
+        cols="40"
+        placeholder="Write a message to hiring team."
+      ></textarea>
+      <br><br>
+      <label for="resume">Upload Resume:</label><sup>*</sup>
+      <input 
+      type="file" 
+      name="resume" 
+      id="resume"
+      accept=".pdf, .doc, .docx"
+      required
+      >
+      <br><br>
+      <fieldset>
+        <legend>Experience Level:</legend>
+        <label for="fresher">
+            <input type="radio" name="experience" value="fresher" id="fresher">Fresher
+        </label>
+        <label for="experienced">
+            <input type="radio" name="experience" value="experienced" id="experienced">Experienced
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
