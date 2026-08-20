@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Course Registration</title>
+
+    <meta
+      name="description"
+      content="Register for a course at Student Course Portal."
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Course Registration</h1>
+
+      <nav>
+        <a href="../Home/index.html">Home</a> &nbsp; | &nbsp;
+
+        <a href="../Courses/courses.html">Courses</a> &nbsp; | &nbsp;
+
+        <a href="../Register/register.html">Register</a> &nbsp; | &nbsp;
+
+        <a href="../Course Schedule/schedule.html">Schedule</a> &nbsp; | &nbsp;
+
+        <a href="../About/about.html">About</a> &nbsp; | &nbsp;
+
+        <a href="../Contact/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name"> Full Name: </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <br /><br />
+
+          <label for="email"> Email: </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            required
+          />
+
+          <br /><br />
+
+          <label for="password"> Password: </label>
+
+          <input type="password" id="password" name="password" required />
+
+          <br /><br />
+
+          <label for="phone"> Phone: </label>
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter phone number"
+            required
+          />
+
+          <br /><br />
+
+          <label for="age"> Age: </label>
+
+          <input type="number" id="age" name="age" min="16" max="60" />
+
+          <br /><br />
+
+          <label for="dob"> Date of Birth: </label>
+
+          <input type="date" id="dob" name="dob" />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Course Information</legend>
+
+          <label for="course"> Select Course: </label>
+
+          <select id="course" name="course" required>
+            <option value="">Select a course</option>
+
+            <option value="html">HTML</option>
+
+            <option value="css">CSS</option>
+
+            <option value="javascript">JavaScript</option>
+          </select>
+
+          <br /><br />
+
+          <p>Learning Mode:</p>
+
+          <label>
+            <input type="radio" name="mode" value="online" />
+
+            Online
+          </label>
+
+          <label>
+            <input type="radio" name="mode" value="offline" />
+
+            Offline
+          </label>
+
+          <br /><br />
+
+          <p>Skills you know:</p>
+
+          <label>
+            <input type="checkbox" name="skills" value="html" />
+
+            HTML
+          </label>
+
+          <label>
+            <input type="checkbox" name="skills" value="css" />
+
+            CSS
+          </label>
+
+          <label>
+            <input type="checkbox" name="skills" value="javascript" />
+
+            JavaScript
+          </label>
+
+          <br /><br />
+
+          <label for="technologies"> Technologies you want to learn: </label>
+
+          <select id="technologies" name="technologies" multiple>
+            <option value="react">React</option>
+
+            <option value="node">Node.js</option>
+
+            <option value="mongodb">MongoDB</option>
+
+            <option value="express">Express.js</option>
+          </select>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <label for="portfolio"> Portfolio URL: </label>
+
+          <input
+            type="url"
+            id="portfolio"
+            name="portfolio"
+            placeholder="https://example.com"
+          />
+
+          <br /><br />
+
+          <label for="resume"> Upload Resume: </label>
+
+          <input type="file" id="resume" name="resume" />
+
+          <br /><br />
+
+          <label for="message"> Why do you want to join? </label>
+
+          <br />
+
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Write your answer..."
+            required
+          >
+          </textarea>
+
+          <br /><br />
+
+          <label>
+            <input type="checkbox" name="terms" required />
+
+            I agree to the terms and conditions.
+          </label>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Student Course Portal</p>
+    </footer>
+  </body>
+</html>
